@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_measure_20dp"
+        android:background="@color/white">
+    <com.davis.kangpinhui.views.CustomTypefaceTextView
+        android:id="@+id/my_address_add_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_64dp"
+        android:textColor="@color/colormain"
+        android:gravity="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:textSize="@dimen/text_size_22"
+        android:text="＋添加新的收获地址"/>
+    </FrameLayout>
+
+    <com.davis.kangpinhui.views.CustomTypefaceTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_measure_15dp"
+        android:text="我的地址"
+        android:textSize="@dimen/text_size_17"
+        android:textColor="@color/black"/>
+    <ListView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="4dp"
+        android:scrollbars="none"/>
+</LinearLayout>

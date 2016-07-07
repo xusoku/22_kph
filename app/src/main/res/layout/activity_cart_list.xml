@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:divider="@null"/>
+
+    <RelativeLayout
+        android:id="@+id/add_cart_relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_70dp"
+        android:background="@color/colorgray">
+
+        <com.davis.kangpinhui.views.CustomTypefaceTextView
+            android:id="@+id/add_cart_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_measure_10dp"
+            android:textSize="@dimen/common_measure_30dp"
+            android:textStyle="bold"
+            android:text="¥0"
+            android:textColor="@color/white"
+            android:gravity="center">
+        </com.davis.kangpinhui.views.CustomTypefaceTextView>
+
+        <LinearLayout
+            android:id="@+id/add_cart_list_addlinear"
+            android:layout_width="@dimen/common_measure_150dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:onClick="doClick"
+            android:background="?android:attr/selectableItemBackground">
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colormain"
+                android:gravity="center"
+                android:text="去结算"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_22" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

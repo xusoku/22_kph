@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorlightgray"
+    >
+<LinearLayout
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorlightgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_65dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.davis.kangpinhui.views.CustomTypefaceTextView
+            android:layout_width="@dimen/common_measure_130dp"
+            android:layout_height="wrap_content"
+            android:text="收货地址"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_17" />
+
+        <com.davis.kangpinhui.views.CustomTypefaceTextView
+            android:id="@+id/add_address_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:hint="请选择收获地址"
+            android:ellipsize="end"
+            android:clickable="true"
+            android:onClick="doClick"
+            android:textSize="@dimen/text_size_17" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/common_measure_20dp"
+        android:background="@color/colorlightgray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.davis.kangpinhui.views.CustomTypefaceTextView
+            android:id="@+id/add_des_address"
+            android:layout_width="@dimen/common_measure_130dp"
+            android:layout_height="@dimen/common_measure_65dp"
+            android:text="详细单元"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_17" />
+
+        <com.davis.kangpinhui.views.CustomTypefaceEditText
+            android:id="@+id/add_des_address_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_17"
+            android:ellipsize="end"
+            android:hint="具体信息（如楼号/层号）"
+            android:drawableRight="@mipmap/myadress_add"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorlightgray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_65dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.davis.kangpinhui.views.CustomTypefaceTextView
+            android:layout_width="@dimen/common_measure_130dp"
+            android:layout_height="wrap_content"
+            android:text="联系人    "
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_17" />
+
+        <com.davis.kangpinhui.views.CustomTypefaceEditText
+            android:id="@+id/add_address_people"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:hint="联系人姓名"
+            android:ellipsize="end"
+            android:textSize="@dimen/text_size_17" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/common_measure_20dp"
+        android:background="@color/colorlightgray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_65dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.davis.kangpinhui.views.CustomTypefaceTextView
+            android:layout_width="@dimen/common_measure_130dp"
+            android:layout_height="wrap_content"
+            android:text="联系手机"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_17" />
+
+        <com.davis.kangpinhui.views.CustomTypefaceEditText
+            android:id="@+id/add_address_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:hint="联系人手机"
+            android:textSize="@dimen/text_size_17" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:background="@color/colorlightgray" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+    <com.davis.kangpinhui.views.CustomTypefaceTextView
+        android:id="@+id/delete_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_65dp"
+        android:gravity="center"
+        android:text="删除收获地址"
+        android:clickable="true"
+        android:onClick="doClick"
+        android:textSize="@dimen/text_size_17"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="@color/red"/>
+    </FrameLayout>
+</LinearLayout>
+</LinearLayout>

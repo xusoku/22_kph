@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorlightgray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_150dp"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/pay_result_iv"
+            android:layout_width="@dimen/common_measure_70dp"
+            android:layout_height="@dimen/common_measure_70dp"
+            android:layout_marginTop="@dimen/common_measure_20dp"
+            android:src="@mipmap/pay_result_ok" />
+
+        <com.davis.kangpinhui.views.CustomTypefaceTextView
+            android:id="@+id/pay_result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_measure_20dp"
+            android:text="支付成功"
+            android:textColor="@color/material_green"
+            android:textSize="@dimen/text_size_17" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_10dp"
+        android:background="@color/colorlightgray" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/pay_result_product"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorlightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_65dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_10dp"
+                        android:text="订单编号"
+                        android:textColor="@color/colorgray"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/pay_result_product_ordernumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/common_measure_20dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorlightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_65dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_10dp"
+                        android:text="收货人"
+                        android:textColor="@color/colorgray"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/pay_result_product_people"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/common_measure_20dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorlightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_65dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_10dp"
+                        android:text="电话号码"
+                        android:textColor="@color/colorgray"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/pay_result_product_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/common_measure_20dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorlightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_65dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_10dp"
+                        android:text="收货地址"
+                        android:textColor="@color/colorgray"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/pay_result_product_address"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:ellipsize="end"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/common_measure_20dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorlightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_65dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_10dp"
+                        android:text="配送时间"
+                        android:textColor="@color/colorgray"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/pay_result_product_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/common_measure_20dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorlightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_65dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_10dp"
+                        android:text="付款方式"
+                        android:textColor="@color/colorgray"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/pay_result_product_paytype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/common_measure_20dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorlightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_65dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_10dp"
+                        android:text="付款状态"
+                        android:textColor="@color/colorgray"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/pay_result_product_paystatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/common_measure_20dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorlightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_65dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_10dp"
+                        android:text="订单金额"
+                        android:textColor="@color/colorgray"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/pay_result_product_paymoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/common_measure_20dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_60dp"
+                android:layout_margin="@dimen/common_measure_20dp"
+                android:background="@drawable/bg_miancolor_unselect">
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/pay_result_kefu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="doClick"
+                android:text="联系客服"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_17" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pay_result_chongzhi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorlightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_65dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_10dp"
+                        android:text="订单编号"
+                        android:textColor="@color/colorgray"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/pay_result_chongzhi_ordernum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/common_measure_20dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorlightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_65dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_10dp"
+                        android:text="充值金额"
+                        android:textColor="@color/colorgray"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/pay_result_chongzhi_paymoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/common_measure_20dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorlightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_65dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_10dp"
+                        android:text="付款方式"
+                        android:textColor="@color/colorgray"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/pay_result_chongzhi_paytype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/common_measure_20dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorlightgray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_measure_65dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/common_measure_10dp"
+                        android:text="付款状态"
+                        android:textColor="@color/colorgray"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/pay_result_chongzhi_paystatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/common_measure_20dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_60dp"
+                android:layout_margin="@dimen/common_measure_20dp"
+                android:background="@drawable/bg_miancolor_unselect">
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/pay_result_kefu1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="doClick"
+                android:text="联系客服"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_17" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+</ScrollView>

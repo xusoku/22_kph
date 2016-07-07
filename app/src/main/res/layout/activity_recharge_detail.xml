@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorlightgray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_65dp"
+            android:layout_marginTop="@dimen/common_measure_10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_10dp"
+                android:text="订单状态 "
+                android:textColor="@color/colorgray"
+                android:textSize="@dimen/text_size_17" />
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/recharge_detail_orderType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_20dp"
+                android:text="为付款"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorlightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_65dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_10dp"
+                android:text="下单时间 "
+                android:textColor="@color/colorgray"
+                android:textSize="@dimen/text_size_17" />
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/recharge_detail_ordertime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_20dp"
+                android:text="为付款"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorlightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_65dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_10dp"
+                android:text="订单金额 "
+                android:textColor="@color/colorgray"
+                android:textSize="@dimen/text_size_17" />
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/recharge_detail_orderprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_20dp"
+                android:text="为付款"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorlightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_65dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_10dp"
+                android:text="付款方式 "
+                android:textColor="@color/colorgray"
+                android:textSize="@dimen/text_size_17" />
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/recharge_detail_orderPayType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_20dp"
+                android:text="为付款"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorlightgray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_65dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_10dp"
+                android:text="订单编号 "
+                android:textColor="@color/colorgray"
+                android:textSize="@dimen/text_size_17" />
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/recharge_detail_orderCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_measure_20dp"
+                android:text="为付款"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recharge_detail_letterlinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorlightgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_65dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <com.davis.kangpinhui.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/common_measure_10dp"
+                    android:text="发票抬头 "
+                    android:textColor="@color/colorgray"
+                    android:textSize="@dimen/text_size_17" />
+
+                <com.davis.kangpinhui.views.CustomTypefaceTextView
+                    android:id="@+id/recharge_detail_letterhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/common_measure_20dp"
+                    android:text="为付款"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_17" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorlightgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_65dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <com.davis.kangpinhui.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/common_measure_10dp"
+                    android:text="姓名         "
+                    android:textColor="@color/colorgray"
+                    android:textSize="@dimen/text_size_17" />
+
+                <com.davis.kangpinhui.views.CustomTypefaceTextView
+                    android:id="@+id/recharge_detail_ordername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/common_measure_20dp"
+                    android:text="为付款"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_17" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorlightgray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_65dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <com.davis.kangpinhui.views.CustomTypefaceTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/common_measure_10dp"
+                    android:text="手机号    "
+                    android:textColor="@color/colorgray"
+                    android:textSize="@dimen/text_size_17" />
+
+                <com.davis.kangpinhui.views.CustomTypefaceTextView
+                    android:id="@+id/recharge_detail_orderphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/common_measure_20dp"
+                    android:text="为付款"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_17" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

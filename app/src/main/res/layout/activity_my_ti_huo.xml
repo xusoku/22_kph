@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.davis.kangpinhui.views.CustomTypefaceEditText
+        android:id="@+id/ti_huo_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_60dp"
+        android:layout_margin="@dimen/common_measure_14dp"
+        android:background="@drawable/bg_flow_tag_unselect"
+        android:gravity="center_vertical"
+        android:hint="输入提货编码"
+        android:padding="@dimen/common_measure_10dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_55dp"
+        android:layout_margin="@dimen/common_measure_20dp"
+        android:background="@drawable/bg_miancolor_unselect">
+
+        <TextView
+            android:id="@+id/ti_huo_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:text="提交提货编码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17" />
+    </FrameLayout>
+
+
+</LinearLayout>

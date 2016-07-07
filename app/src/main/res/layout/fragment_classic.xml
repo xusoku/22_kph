@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_65dp"
+        android:background="@color/colormain"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.davis.kangpinhui.views.CustomTypefaceEditText
+            android:id="@+id/classic_rootid_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_measure_10dp"
+            android:hint="@string/classic_search"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_17"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colormain"
+            android:drawablePadding="10dp"
+            android:drawableBottom="@drawable/line"/>
+
+        <LinearLayout
+            android:id="@+id/classic_rootid_search_linear"
+            android:layout_width="@dimen/common_measure_80dp"
+            android:layout_height="@dimen/common_measure_65dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/index_search" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+            <ListView
+                android:id="@+id/classic_rootid_list"
+                android:layout_width="@dimen/common_measure_120dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorlightgray"
+                android:divider="@null"
+                android:scrollbars="none" />
+            <com.davis.kangpinhui.views.MySwipeRefreshLayout
+                android:id="@+id/classic_swipe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <com.davis.kangpinhui.views.PinnedHeaderListView
+                android:id="@+id/classic_rootid_pinnlist"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_measure_10dp"
+                android:layout_marginRight="@dimen/common_measure_10dp"
+                android:layout_weight="1"
+                android:divider="@null"
+                android:scrollbars="none" />
+            </com.davis.kangpinhui.views.MySwipeRefreshLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/no_linear_shopid"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/fragment_noshopid_layout"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

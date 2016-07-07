@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="2dp"
+        android:layout_margin="@dimen/common_measure_5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_50dp">
+
+                <com.davis.kangpinhui.views.CustomTypefaceTextView
+                    android:id="@+id/allorder_item_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_measure_10dp"
+                    android:text="待付款"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_17" />
+
+                <com.davis.kangpinhui.views.CustomTypefaceTextView
+                    android:id="@+id/allorder_item_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_measure_10dp"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_17" />
+            </RelativeLayout>
+
+
+            <com.davis.kangpinhui.views.StretchedListView
+                android:id="@+id/allorder_lst_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.davis.kangpinhui.views.StretchedListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorlightgray" />
+
+            <LinearLayout
+                android:id="@+id/allorder_item_linear"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_65dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/common_measure_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.davis.kangpinhui.views.CustomTypefaceTextView
+                    android:id="@+id/allorder_item_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/common_measure_10dp"
+                    android:background="@drawable/bg_flow_tag_unselect"
+                    android:padding="@dimen/common_measure_10dp"
+                    android:text="取消订单"
+                    android:textColor="@color/colorgray"
+                    android:textSize="@dimen/text_size_17" />
+
+                <com.davis.kangpinhui.views.CustomTypefaceTextView
+                    android:id="@+id/allorder_item_conuti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/common_measure_10dp"
+                    android:layout_marginRight="@dimen/common_measure_10dp"
+                    android:background="@drawable/bg_miancolor_unselect"
+                    android:padding="@dimen/common_measure_10dp"
+                    android:text="继续支付"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_17" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

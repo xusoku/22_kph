@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_65dp"
+        android:gravity="center_vertical"
+        android:background="@color/colormain">
+
+        <ImageView
+            android:id="@+id/searchText_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@mipmap/btn_titlebar_back_normal" />
+
+        <AutoCompleteTextView
+            android:id="@+id/searchText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/common_measure_10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawablePadding="10dp"
+            android:drawableBottom="@drawable/line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/poi_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="撒地方"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/common_measure_10dp"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="地图中蓝色区域为可选配送范围"
+                android:textColor="@color/colorgray"
+                android:textSize="@dimen/text_size_15"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/common_measure_5dp"
+                android:layout_marginBottom="@dimen/common_measure_10dp"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+        </LinearLayout>
+        <com.davis.kangpinhui.views.LoadMoreListView
+            android:id="@+id/poi_search_lst"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/colorlightgray"
+            android:visibility="gone"
+            android:dividerHeight="1dp"
+            android:scrollbars="none">
+        </com.davis.kangpinhui.views.LoadMoreListView>
+    </RelativeLayout>
+
+</LinearLayout>

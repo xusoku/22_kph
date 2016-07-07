@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/common_measure_125dp"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorlightgray" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/common_measure_10dp">
+
+        <ImageView
+            android:id="@+id/order_comfi_item_iv"
+            android:layout_width="@dimen/common_measure_100dp"
+            android:layout_height="@dimen/common_measure_100dp"
+            android:src="@mipmap/img_defualt_bg" />
+
+
+        <com.davis.kangpinhui.views.CustomTypefaceTextView
+            android:id="@+id/order_comfi_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/order_comfi_item_iv"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="aaa"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/common_measure_10dp"
+            android:textSize="@dimen/text_size_17" />
+
+
+        <com.davis.kangpinhui.views.CustomTypefaceTextView
+            android:id="@+id/order_comfi_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_measure_10dp"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="12"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_17" />
+
+        <com.davis.kangpinhui.views.CustomTypefaceTextView
+            android:id="@+id/order_comfi_item_sstandent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/order_comfi_item_iv"
+            android:layout_marginTop="@dimen/common_measure_40dp"
+            android:layout_below="@id/order_comfi_item_title"
+            android:text="asdfsdafasf"
+            android:textColor="@color/colorgray"
+            android:layout_marginLeft="@dimen/common_measure_10dp"
+            android:textSize="@dimen/text_size_17" />
+
+
+        <com.davis.kangpinhui.views.CustomTypefaceTextView
+            android:id="@+id/order_comfi_item_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_measure_30dp"
+            android:layout_below="@id/order_comfi_item_price"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="24"
+            android:textColor="@color/colorgray"
+            android:textSize="@dimen/text_size_17" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+您的密钥库包含 1 个条目
+
+别名: android.keystore
+创建日期: 2016-5-30
+条目类型: PrivateKeyEntry
+证书链长度: 1
+证书[1]:
+所有者: CN=kph, OU=kph, O=kph, L=sh, ST=sh, C=zh
+发布者: CN=kph, OU=kph, O=kph, L=sh, ST=sh, C=zh
+序列号: 3337d54d
+有效期开始日期: Mon May 30 10:46:01 CST 2016, 截止日期: Tue Mar 03 10:46:01 CST 2071
+证书指纹:
+         MD5: C1:29:B2:B7:30:06:4C:3F:8B:FE:E0:F6:EB:4C:5A:FB
+         SHA1: 07:1C:61:12:76:ED:D9:B6:58:DE:44:94:88:05:79:20:28:EC:E1:2D
+         SHA256: 22:3E:3E:D1:38:07:30:2B:FF:21:E3:CE:05:9C:96:1E:F0:6F:11:68:E5:4C:1A:78:4F:38:2D:F4:65:06:A8:C5
+         签名算法名称: SHA256withRSA
+         版本: 3
+
+扩展: 
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 48 4A 8E 63 0A 4D 8E 14   2F 72 1B 74 A4 84 C3 09  HJ.c.M../r.t....
+0010: 85 0D AF 86                                        ....
+]
+]

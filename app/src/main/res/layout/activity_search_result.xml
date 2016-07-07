@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/search_result_title_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_65dp"
+        android:background="@color/colormain"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/btn_titlebar_back_normal" />
+        </LinearLayout>
+
+        <com.davis.kangpinhui.views.CustomTypefaceEditText
+            android:id="@+id/search_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:hint="请输入关键字"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colormain"
+            android:textSize="@dimen/text_size_17"
+            android:drawablePadding="@dimen/common_measure_10dp"
+            android:drawableBottom="@drawable/line"/>
+
+        <LinearLayout
+            android:id="@+id/search_right_iv"
+            android:layout_width="@dimen/common_measure_80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/index_search" />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:id="@+id/search_result_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_65dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/search_all_classic"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="doClick"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/search_all_classic_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部分类"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <ImageView
+                        android:layout_width="@dimen/common_measure_20dp"
+                        android:layout_height="@dimen/common_measure_20dp"
+                        android:src="@mipmap/triangle_down" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/common_measure_45dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorgray" />
+
+                <LinearLayout
+                    android:id="@+id/search_all_sort"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="doClick"
+                    android:orientation="horizontal">
+
+                    <com.davis.kangpinhui.views.CustomTypefaceTextView
+                        android:id="@+id/search_all_sort_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="销量排序"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <ImageView
+                        android:layout_width="@dimen/common_measure_20dp"
+                        android:layout_height="@dimen/common_measure_20dp"
+                        android:src="@mipmap/triangle_down" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.davis.kangpinhui.views.MySwipeRefreshLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.davis.kangpinhui.views.LoadMoreRecyclerView
+            android:id="@+id/search_result_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/common_measure_5dp">
+
+        </com.davis.kangpinhui.views.LoadMoreRecyclerView>
+    </com.davis.kangpinhui.views.MySwipeRefreshLayout>
+
+</LinearLayout>

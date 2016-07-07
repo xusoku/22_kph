@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/my_address_item_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/common_measure_0dp"
+            android:layout_height="@dimen/common_measure_90dp"
+            android:layout_margin="@dimen/common_measure_15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/my_address_item_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="收货人：xxx"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/my_address_item_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/my_address_item_people"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="完善信息"
+                android:textColor="@color/red"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:textSize="@dimen/text_size_17" />
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/my_address_item_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="123456756"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/my_address_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/my_address_item_people"
+                android:layout_marginTop="@dimen/common_measure_10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="添加新的收获地址"
+                android:textColor="@color/colorgray"
+                android:textSize="@dimen/text_size_17" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/my_address_item_edit"
+            android:layout_width="@dimen/common_measure_65dp"
+            android:layout_height="@dimen/common_measure_65dp"
+            android:paddingRight="@dimen/common_measure_15dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/my_andress_fix" />
+    </LinearLayout>
+</FrameLayout>

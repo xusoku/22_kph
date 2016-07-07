@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/shop_item_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/stop_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_measure_10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17"
+                android:textStyle="bold" />
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:id="@+id/stop_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_measure_10dp"
+                android:layout_marginLeft="@dimen/common_measure_10dp"
+                android:layout_marginRight="@dimen/common_measure_10dp"
+                android:textColor="@color/colorgray"
+                android:textSize="@dimen/text_size_15" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_15dp"
+            android:background="@color/colorlightgray" />
+    </LinearLayout>
+</FrameLayout>

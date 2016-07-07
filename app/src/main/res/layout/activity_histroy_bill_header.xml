@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_10dp"
+        android:background="@color/colorlightgray" />
+
+    <com.davis.kangpinhui.views.CustomTypefaceTextView
+        android:id="@+id/histroy_bill_header_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_65dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/common_measure_10dp"
+        android:text="jfsdjfksdjf"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_17" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_20dp"
+        android:background="@color/colorlightgray" />
+</LinearLayout>

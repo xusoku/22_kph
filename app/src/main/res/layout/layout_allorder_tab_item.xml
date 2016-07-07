@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.davis.kangpinhui.views.CustomTypefaceTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                                           android:layout_width="wrap_content"
+                                           android:layout_height="match_parent"
+                                           android:paddingTop="5dp"
+                                           android:gravity="center"
+                                           android:textColor="@color/main_btn_allorder_text_color"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:textSize="@dimen/text_size_17"/>

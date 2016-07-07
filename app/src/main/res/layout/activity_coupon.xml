@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.davis.kangpinhui.views.viewpagerindicator.FixPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="@dimen/common_measure_60dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorlightgray"/>
+
+    <com.davis.kangpinhui.views.HackyViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/common_measure_5dp"
+
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

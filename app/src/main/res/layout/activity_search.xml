@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_65dp"
+        android:background="@color/colormain"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/btn_titlebar_back_normal" />
+        </LinearLayout>
+
+        <com.davis.kangpinhui.views.CustomTypefaceEditText
+            android:id="@+id/search_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:hint="@string/classic_search"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:background="@color/colormain"
+            android:drawablePadding="10dp"
+            android:drawableBottom="@drawable/line"
+            android:textSize="@dimen/text_size_17" />
+
+        <LinearLayout
+            android:id="@+id/search_right_iv"
+            android:layout_width="@dimen/common_measure_80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/index_search" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.davis.kangpinhui.views.FlowLayout
+        android:id="@+id/search_flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/common_measure_10dp"
+        android:background="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.davis.kangpinhui.views.CustomTypefaceTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_50dp"
+            android:textColor="@color/colorgray"
+            android:layout_marginLeft="@dimen/common_measure_15dp"
+            android:gravity="center_vertical"
+            android:text="历史搜索"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorlightgray"
+            android:layout_marginLeft="@dimen/common_measure_15dp"/>
+        <ListView
+            android:id="@+id/search_list_histroy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:listSelector="?android:attr/selectableItemBackground"
+            />
+        <com.davis.kangpinhui.views.CustomTypefaceTextView
+            android:id="@+id/search_clear_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_measure_50dp"
+            android:textColor="@color/colorgray"
+            android:gravity="center"
+            android:clickable="true"
+            android:onClick="doClick"
+            android:text="清除历史记录"/>
+    </LinearLayout>
+
+</LinearLayout>

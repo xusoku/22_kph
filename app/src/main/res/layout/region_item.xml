@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center"
+    android:clickable="true">
+
+
+    <com.davis.kangpinhui.views.CustomTypefaceTextView
+        android:id="@+id/region_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/common_measure_10dp"
+        android:layout_marginBottom="@dimen/common_measure_10dp"
+        android:textColor="@color/black"
+        android:background="@drawable/bg_flow_tag_unselect"
+        android:padding="@dimen/common_measure_10dp"
+        android:text="asdf"
+        android:textSize="@dimen/text_size_17" />
+</LinearLayout>

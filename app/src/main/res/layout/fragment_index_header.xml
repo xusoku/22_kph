@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.davis.kangpinhui.views.viewlineloop.LoopBanner
+        android:id="@+id/index_loopbanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_235dp">
+
+    </com.davis.kangpinhui.views.viewlineloop.LoopBanner>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_measure_140dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/index_classic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/common_measure_64dp"
+                android:layout_height="@dimen/common_measure_64dp"
+                android:src="@mipmap/index_classic" />
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/index_classic"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/index_tuan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/common_measure_64dp"
+                android:layout_height="@dimen/common_measure_64dp"
+                android:src="@mipmap/index_tuangou" />
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/index_tuan"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/index_rechange"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:onClick="doClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/common_measure_64dp"
+                android:layout_height="@dimen/common_measure_64dp"
+                android:src="@mipmap/index_vip_rechange" />
+
+            <com.davis.kangpinhui.views.CustomTypefaceTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/index_rechanger"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

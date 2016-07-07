@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">康品汇生鲜</string>
+
+
+    <string name="index_classic">分类食材</string>
+    <string name="index_tuan">吃货团购</string>
+    <string name="index_rechanger">会员充值</string>
+
+
+    <string name="mine_allorder">全部订单</string>
+    <string name="mine_unpay">待付款</string>
+    <string name="mine_unsend">待配送</string>
+    <string name="mine_senging">配送中</string>
+    <string name="mine_chrage">购物车</string>
+    <string name="mine_mycoup">我的优惠券</string>
+    <string name="mine_myaddress">我的收货地址</string>
+    <string name="mine_mytihuo">我要提货</string>
+    <string name="mine_kefu">联系客服</string>
+    <string name="mine_feedback">问题反馈</string>
+    <string name="mine_set">设置</string>
+    <string name="mine_order">充值订单</string>
+    <string name="mine_histroy">历史账单</string>
+
+
+    <string name="mine_location">自动定位当前位置</string>
+    <string name="classic_search">搜索热门关键字</string>
+
+
+    <string name="classic_index_no_adaress">Hi，小康恭候多时了～%s，请输入地址找到为您服务的门店吧!</string>
+
+
+</resources>

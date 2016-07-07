@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.davis.kangpinhui.views.MySwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mine_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_150dp"
+                android:background="@color/colormain">
+
+                <ImageView
+                    android:id="@+id/fragment_mine_photo"
+                    android:layout_width="@dimen/common_measure_80dp"
+                    android:layout_height="@dimen/common_measure_80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_measure_20dp" />
+
+                <com.davis.kangpinhui.views.CustomTypefaceTextView
+                    android:id="@+id/fragment_mine_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/common_measure_10dp"
+                    android:layout_toRightOf="@id/fragment_mine_photo"
+                    android:text="注册／登录"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_17" />
+
+                <com.davis.kangpinhui.views.CustomTypefaceTextView
+                    android:id="@+id/fragment_mine_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_measure_35dp"
+                    android:text="¥"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_measure_40dp" />
+
+                <com.davis.kangpinhui.views.CustomTypefaceTextView
+                    android:id="@+id/fragment_mine_price_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/fragment_mine_price"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_measure_20dp"
+                    android:text="去充值"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_17" />
+            </RelativeLayout>
+
+            <com.davis.kangpinhui.views.MineCustomLayout
+                android:id="@+id/mine_allorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:src="@mipmap/mine_all_order"
+                app:text="@string/mine_allorder" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_66dp"
+                android:orientation="horizontal">
+
+                <com.davis.kangpinhui.views.MineCustomLayout
+                    android:id="@+id/mine_allorder_unpay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:show="false"
+                    app:src="@mipmap/mine_unpay"
+                    app:text="@string/mine_unpay" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorlightgray" />
+
+                <com.davis.kangpinhui.views.MineCustomLayout
+                    android:id="@+id/mine_allorder_unsend"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:show="false"
+                    app:src="@mipmap/mine_sending"
+                    app:text="@string/mine_unsend" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="@dimen/common_measure_60dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorlightgray"
+                    android:visibility="gone" />
+
+                <com.davis.kangpinhui.views.MineCustomLayout
+                    android:id="@+id/mine_allorder_sending"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    app:show="false"
+                    app:src="@mipmap/sending_ing"
+                    app:text="@string/mine_senging" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_10dp"
+                android:background="@color/colorlightgray" />
+
+            <com.davis.kangpinhui.views.MineCustomLayout
+                android:id="@+id/mine_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:src="@mipmap/mine_cart"
+                app:text="@string/mine_chrage" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_10dp"
+                android:background="@color/colorlightgray" />
+
+            <com.davis.kangpinhui.views.MineCustomLayout
+                android:id="@+id/mine_mycoup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:src="@mipmap/mine_coup"
+                app:text="@string/mine_mycoup" />
+
+            <com.davis.kangpinhui.views.MineCustomLayout
+                android:id="@+id/mine_myaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:src="@mipmap/mine_address"
+                app:text="@string/mine_myaddress" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_10dp"
+                android:background="@color/colorlightgray" />
+
+            <com.davis.kangpinhui.views.MineCustomLayout
+                android:id="@+id/mine_ti_huo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:src="@mipmap/mine_tihuo"
+                app:text="@string/mine_mytihuo" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_10dp"
+                android:background="@color/colorlightgray" />
+
+            <com.davis.kangpinhui.views.MineCustomLayout
+                android:id="@+id/mine_kefu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:src="@mipmap/mine_kefu"
+                app:text="@string/mine_kefu" />
+
+            <com.davis.kangpinhui.views.MineCustomLayout
+                android:id="@+id/mine_feedback_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:src="@mipmap/mine_feedback"
+                app:text="@string/mine_feedback" />
+
+            <com.davis.kangpinhui.views.MineCustomLayout
+                android:id="@+id/mine_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:src="@mipmap/mine_setting"
+                app:text="@string/mine_set" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_10dp"
+                android:background="@color/colorlightgray" />
+
+            <com.davis.kangpinhui.views.MineCustomLayout
+                android:id="@+id/mine_rechange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:src="@mipmap/mine_rechange"
+                app:text="@string/mine_order" />
+
+            <com.davis.kangpinhui.views.MineCustomLayout
+                android:id="@+id/mine_histroy_bill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:src="@mipmap/mine_histroy"
+                app:text="@string/mine_histroy" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_measure_10dp"
+                android:background="@color/colorlightgray" />
+        </LinearLayout>
+    </ScrollView>
+</com.davis.kangpinhui.views.MySwipeRefreshLayout>
